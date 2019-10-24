@@ -26,7 +26,7 @@ class Artist
     if self.all.select { |artist| artist.name == name }.empty?
        Artist.new(name)
     else
-      self.all.select { |artist| artist.name == name }
+      self.all.select { |artist| artist.name == name }[0]
     end
   end
 
