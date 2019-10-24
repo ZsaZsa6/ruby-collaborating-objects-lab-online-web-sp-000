@@ -31,7 +31,7 @@ class Artist
   end
 
   def print_songs
-    # binding.pry
-    Artist.all.select {|song| artist.song}
+    # # binding.pry
+    # Songs.all.select {|song| self.song}
   end
 end
