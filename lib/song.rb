@@ -19,9 +19,9 @@ class Song
       MP3Importer.files.each {song.artist = filename.split(" - ")[0]}
   end
 
-  def artist_name=(name)
-    Artist.find_or_create_by_name
-
-
-  end
+  # def artist_name=(name)
+  #   Artist.find_or_create_by_name
+  #
+  #
+  # end
 end
