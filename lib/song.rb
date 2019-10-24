@@ -20,7 +20,7 @@ class Song
       song = Song.new(name)
       # binding.pry
       artist_name=(name)
-      name = filename.split(" - ")[0]
+      artist.name = filename.split(" - ")[0]
       song.name = filename.split(" - ")[1]
   end
 
