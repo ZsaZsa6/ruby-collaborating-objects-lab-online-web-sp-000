@@ -16,7 +16,7 @@ class Artist
     song.artist = self
   end
 
-  def songs   
+  def songs
     Song.all.select {|song| song.artist == self}
 
   end
@@ -25,8 +25,8 @@ class Artist
     if self.all.select { |artist| artist.name == name }.nil?
       binding.pry
       self.artist = Artist.new(name)
-    else
-      self.artist.name = name
+    # else
+      # self.artist.name = name
     end
     return self.name
   end
