@@ -13,9 +13,9 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    # binding.pry
-    MP3Importer.files
     song = self.new
+    # binding.pry
+      MP3Importer.files
       song.name = filename.split(" - ")[1]
       song.artist = filename.split(" - ")[0]
   end
