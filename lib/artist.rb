@@ -23,7 +23,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     binding.pry
-    if self.all.select { |artist| artist.name == name }.nil?
+    if self.all.select { |artist| artist.name == name }.empty?
       self.artist = Artist.new(name)
     # else
       # self.artist.name = name
