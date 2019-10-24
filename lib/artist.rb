@@ -19,7 +19,7 @@ class Artist
   def songs
     binding.pry
     Song.all.select {|song| song.artist == self}
-
+  end
   end
 
   def self.find_or_create_by_name(name)
