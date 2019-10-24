@@ -13,7 +13,6 @@ class Artist
   end
 
   def add_song(song)
-    binding.pry
     song.artist = self
   end
 
@@ -32,6 +31,7 @@ class Artist
   end
 
   def print_songs
-    # Song.all.select {}
+    binding.pry
+    self.name.song
   end
 end
