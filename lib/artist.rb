@@ -18,11 +18,11 @@ class Artist
     Song.all.select {|song| song.artist == self}
   end
 
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(name)
     if (self.artist.nil?)
-      @@all << self.artist = Artist.new(name)
+      self.artist = Artist.new(name)
     else
-      @@all << self.artist.name = name
+      self.artist.name = name
     end
     return self.artist.name
   end
