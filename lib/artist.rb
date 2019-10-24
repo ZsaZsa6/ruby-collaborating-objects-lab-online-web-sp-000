@@ -19,7 +19,6 @@ class Artist
   def songs
     Song.all.select {|song| song.artist == self}
   end
-  end
 
   def self.find_or_create_by_name(name)
     # binding.pry
@@ -32,6 +31,6 @@ class Artist
   end
 
   def print_songs(name)
-  
+
   end
 end
