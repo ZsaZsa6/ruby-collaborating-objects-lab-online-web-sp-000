@@ -22,6 +22,6 @@ class Song
 
     Artist.find_or_create_by_name(name)
 
-    binding.pry
+    # binding.pry
   end
 end
