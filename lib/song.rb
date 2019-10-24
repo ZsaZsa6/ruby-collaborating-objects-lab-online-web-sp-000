@@ -1,3 +1,4 @@
+require "pry"
 class Song
     attr_accessor :name, :artist, :all
     @@all = []
@@ -12,6 +13,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
+    binding.pry
     song = self.new
       song.title = filename.split(" - ")[1]
       song
