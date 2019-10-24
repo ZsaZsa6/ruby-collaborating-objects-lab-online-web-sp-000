@@ -17,7 +17,7 @@ class Artist
 
   def songs
     Song.all.select {|song| song.artist == self}
-    return self.song.artist
+    return self.song.
   end
 
   def self.find_or_create_by_name(name)
