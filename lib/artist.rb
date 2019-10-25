@@ -10,6 +10,7 @@ class Artist
 
   def self.all
     @@all
+    binding.pry
   end
 
   def add_song(song)
@@ -18,7 +19,6 @@ class Artist
 
   def songs
     Song.all.select {|song| song.artist == self}
-    # binding.pry
 
   end
 
@@ -33,6 +33,6 @@ class Artist
 
   def print_songs
     # binding.pry
-    @@all.self
+    # @@all.self
   end
 end
