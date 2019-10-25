@@ -34,6 +34,6 @@ class Artist
   def print_songs
     # binding.pry
     # @@all.self
-    self.select { |artist| artist.name == name }[1]
+    songs.select { |artist| artist.name }[1]
   end
 end
