@@ -31,6 +31,6 @@ class Artist
   end
 
   def print_songs
-     Songs.all.select {|song| self.song}
+     Songs.all.select {|song| song.artist == self}
   end
 end
