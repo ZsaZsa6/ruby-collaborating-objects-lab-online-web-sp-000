@@ -21,7 +21,7 @@ class Song
       # binding.pry
       artist_name= filename.split(" - ")[0]
       song.name = filename.split(" - ")[1]
-      song.artist = Artist.add_song(song)
+      # song.artist = Artist.add_song(song)
   end
 
 end
