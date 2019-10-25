@@ -21,7 +21,7 @@ class Song
       # name = Artist.add_song(filename.split(" - ")[1])
 
       song.artist = Artist.find_or_create_by_name(filename.split(" - ")[0])
-      song.artist = Artist.add_song(filename.split(" - ")[1])
+      song.artist = (filename.split(" - ")[1])
 # our_song_instance.artist = our_artist_instance.
   end
 
